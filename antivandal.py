@@ -36,7 +36,7 @@ import os
 import time
 import pymongo
 from tqdm import tqdm
-from csv import DictReader
+from csv import DictReader, DictWriter
 
 # env variables
 MONGODB_URL = os.getenv('MONGODB_URL', 'mongodb://localhost:27017/vandal')
@@ -58,6 +58,9 @@ def ensure_index():
 
 
 def import_corpus_2010():
+    """
+    Import 2010 data to MongoDB
+    """
     edits = list(DictReader(open('pan-wikipedia-vandalism-corpus-2010/edits.csv')))
     gold_annotations = list(DictReader(open('pan-wikipedia-vandalism-corpus-2010/gold-annotations.csv')))
     vandalism_ids = {int(a['editid']) for a in gold_annotations if a['class'] == 'vandalism'}
@@ -73,6 +76,9 @@ def import_corpus_2010():
 
 
 def import_corpus_2011():
+    """
+    Import 2011 data to MongoDB
+    """
     edits = list(DictReader(open('pan-wikipedia-vandalism-corpus-2011/edits-en.csv')))
     revision_filenames = get_revision_filenames_2011()
     for edit in tqdm(edits):
@@ -98,6 +104,9 @@ def get_revision_filenames_2011():
 
 
 def get_revision_filenames(topdir):
+    """
+    Helper function returning a dict: {revision_id: path/to/file.txt}
+    """
     result = {}
     for dirname, dirs, files in os.walk(topdir):
         if dirname == topdir:
@@ -107,6 +116,65 @@ def get_revision_filenames(topdir):
             result[revid] = os.path.join(dirname, filename)
     return result
 
+
+#--- Dumper
+
+
+def export_corpus(filename, exclude=None):
+    """
+    Export corpus to a csv file
+
+    :param exclude: list of fields to exclude. By default we exclude
+                    "oldrevision" and "newrevision" records
+    """
+    if exclude is None:
+        exclude = ['oldrevision', 'newrevision']
+
+    exclude = set(exclude)
+    exclude.add('_id')
+
+    all_fields = set(corpus.find_one().keys())
+    returned_fields = sorted(all_fields - exclude)
+    fields_dict = {f: False for f in exclude}
+
+    with open(filename, mode='w') as fd:
+        writer = DictWriter(fd, returned_fields)
+        writer.writeheader()
+        for record in tqdm(corpus.find(fields=fields_dict), total=corpus.count()):
+            record = {k: v.encode('utf8') if isinstance(v, unicode) else v for k, v in record.iteritems()}
+            writer.writerow(record)
+
+
+#--- Dataset extension functions
+
+def apply(func):
+    """
+    A function which applies the function `func` to every item of the
+    MongoDB-stored dataset. If function returns a dict, it's merged back
+    with the item and we update the record
+    """
+    for record in tqdm(corpus.find(), total=corpus.count()):
+        ret = func(record)
+        if ret:
+            new_record = dict(record, **ret)
+            if new_record != record:
+                corpus.update({'_id': record['_id']}, new_record)
+
+
+def extend_with_text_metrics(record):
+    """
+    An `apply` argument. Generates a set of simplest text metrics for the record
+    """
+    old_rev = record['oldrevision']
+    new_rev = record['newrevision']
+    return {
+        'difflen': len(new_rev) - len(old_rev),
+        'commentlen': len(record['editcomment']),
+    }
+
+
+
+#--- Converters
 
 def to_int(obj, *keys):
     for key in keys:
