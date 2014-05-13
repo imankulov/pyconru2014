@@ -35,6 +35,8 @@ MongoDB document schema
 import os
 import time
 import pymongo
+import requests
+import datetime
 from tqdm import tqdm
 from csv import DictReader, DictWriter
 
@@ -172,6 +174,39 @@ def extend_with_text_metrics(record):
         'commentlen': len(record['editcomment']),
     }
 
+
+#--- Wikipedia API helpers
+
+def api_request(action='query', **kw):
+    headers = {'User-Agent': 'AntiVandal Wikipedia API client (https://github.com/imankulov/pyconru2014)'}
+    kw.update(format='json')
+    base_url = 'http://en.wikipedia.org/w/api.php'
+    resp = requests.get(base_url, headers=headers, params=dict(action=action, **kw))
+    return resp.json()
+
+
+def get_page_revisions(page_id, revision_id):
+    """
+    Get all page revisions, starting 1 Jan 2009 up to revision in question, in
+    reverse order (newer revisions first)
+    """
+    ret = []
+    page_id = str(page_id)
+    rvend = datetime.datetime(2009, 1, 1).strftime('%s')
+    rvprop = 'ids|flags|timestamp|user|size'
+    rvlimit = 500
+    rvcontinue = None
+    while True:
+        kwargs = dict(prop='revisions', pageids=page_id, rvstartid=revision_id,
+                      rvend=rvend, rvprop=rvprop, rvlimit=rvlimit)
+        if rvcontinue is not None:
+            kwargs['rvcontinue'] = rvcontinue
+        resp = api_request(**kwargs)
+        ret += resp['query']['pages'][page_id]['revisions']
+        if 'query-continue' not in resp:
+            break
+        rvcontinue = resp['query-continue']['revisions']['rvcontinue']
+    return ret
 
 
 #--- Converters
