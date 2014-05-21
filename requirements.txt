@@ -1,3 +1,7 @@
 pymongo
 tqdm
 requests
+nltk
+lzw
+
+lazy
