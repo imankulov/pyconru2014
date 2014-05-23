@@ -37,6 +37,7 @@ import re
 import os
 import nltk
 import time
+import random
 import pymongo
 import requests
 import datetime
@@ -61,7 +62,8 @@ users = db[MONGODB_USERS_COLLECTION]
 
 # misc constants
 re_ip = re.compile(r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$')
-
+re_http_url = re.compile(r'\bhttps?://[\w/%?#&_\-=.,]+[\w/%?#&_\-](?=[\'<>.,]?)')
+magic = 'lskmqs'
 
 def ensure_index():
     """
@@ -164,76 +166,123 @@ def export_corpus(filename, exclude=None):
 
 #--- Dataset extension functions
 
-def apply(func):
+def apply_all():
+    apply(cleanup, extend_with_diff, extend_with_basic_text_metrics, extend_with_ratio_metrics)
+
+def apply(*functions):
     """
-    A function which applies the function `func` to every item of the
-    MongoDB-stored dataset. If function returns a dict, it's merged back
+    A function which applies the sequence of functions `func` to every item of
+    the MongoDB-stored dataset. If function returns a dict, it's merged back
     with the item and we update the record
     """
     for record in tqdm(corpus.find(), total=corpus.count()):
-        ret = func(record)
-        if ret:
-            new_record = dict(record, **ret)
-            if new_record != record:
-                corpus.update({'_id': record['_id']}, new_record)
+
+        orig_record = record.copy()
+
+        for func in functions:
+            ret = func(**record)
+            if ret:
+                record = dict(record, **ret)
+
+        if record != orig_record:
+            corpus.update({'_id': record['_id']}, record)
 
 
-def extend_with_text_metrics(record):
-    """
-    An `apply` argument. Generates a set of simplest text metrics for the record
-    """
-    old_rev = record['oldrevision']
-    new_rev = record['newrevision']
-    old_rev_set = set(nltk.word_tokenize(old_rev))
-    new_rev_set = set(nltk.word_tokenize(new_rev))
+def cleanup(**record):
+    for key in ['difflen' 'commentlen' 'empty_comment' 'sz_ratio' 'ul_ratio'
+            'u_ratio' 'd_ratio' 'non_alnum_ratio' 'compressibility'
+            'longest_word' 'longest_seq' 'diff_word' 'neg_ul_ratio'
+            'neg_u_ratio' 'neg_d_ratio' 'neg_non_alnum_ratio'
+            'neg_compressibility' 'neg_longest_word' 'neg_longest_seq'
+            'neg_diff_word']:
+        record.pop(key, None)
+    if record['editcomment'] == 'null':
+        return {'editcomment': ''}
 
+
+def extend_with_diff(oldrevision, newrevision, **record):
+
+    # preprocess the text to replace url with word-alike sequences
+    old_rev, old_pr_map = keep_urls_preprocess(oldrevision)
+    new_rev, new_pr_map = keep_urls_preprocess(newrevision)
+
+    # split the text to chunks and replace back word-alike sequences with urls
+    old_rev_chunks = keep_urls_postprocess(nltk.word_tokenize(old_rev), old_pr_map)
+    new_rev_chunks = keep_urls_postprocess(nltk.word_tokenize(new_rev), new_pr_map)
+
+    # make sure all the chunks are unique
+    old_rev_set = set(old_rev_chunks)
+    new_rev_set = set(new_rev_chunks)
+
+    # find the "positive diff": all the records which have been added by the edit
     diff_set = sorted(new_rev_set.difference(old_rev_set))
     diff_word = u' '.join(diff_set)
 
-
+    # find the "negative diff": all the record which have been removed by the edit
     neg_diff_set = sorted(old_rev_set.difference(new_rev_set))
     neg_diff_word = u' '.join(neg_diff_set)
 
-    # as described by Santigo M. Mola Velasco
-    total_len = len(diff_word) + 1
-    upper_len = sum(c in uppercase for c in diff_word) + 1
-    lower_len = sum(c in uppercase for c in diff_word) + 1
-    digits_len = sum(c in digits for c in diff_word) + 1
-    alnum_len = sum(c in alphanum for c in diff_word) + 1
-    compressed_len = len(list(lzw.compress(diff_word.encode('utf8')))) + 1
+    # keep track of old and new urls
+    old_rev_urls = set(old_pr_map.values())
+    new_rev_urls = set(new_pr_map.values())
 
-    neg_total_len = len(neg_diff_word) + 1
-    neg_upper_len = sum(c in uppercase for c in neg_diff_word) + 1
-    neg_lower_len = sum(c in uppercase for c in neg_diff_word) + 1
-    neg_digits_len = sum(c in digits for c in neg_diff_word) + 1
-    neg_alnum_len = sum(c in alphanum for c in neg_diff_word) + 1
-    neg_compressed_len = len(list(lzw.compress(neg_diff_word.encode('utf8')))) + 1
+    # find the positive diff for URLs
+    url_diff_set = sorted(new_rev_urls.difference(old_rev_urls))
+    url_diff_word = u' '.join(url_diff_set)
+    urls_added = bool(url_diff_set)
 
+    # find the negative diff for URLs
+    neg_url_diff_set = sorted(old_rev_urls.difference(new_rev_urls))
+    neg_url_diff_word = u' '.join(neg_url_diff_set)
+    urls_removed = bool(neg_url_diff_set)
+
+    ret =  {'diff': diff_word,
+            'neg_diff': neg_diff_word,
+            'urls': url_diff_word,
+            'neg_urls': neg_url_diff_word,
+            'urls_added': urls_added,
+            'urls_removed': urls_removed}
+
+    return ret
+
+
+def extend_with_basic_text_metrics(oldrevision, newrevision, editcomment, **kw):
     return {
-        'difflen': len(new_rev) - len(old_rev),
-        'commentlen': len(record['editcomment']),
-        'sz_ratio': (len(new_rev) + 1) / (len(old_rev) + 1),
-
-        # positive diff data
-        'ul_ratio': upper_len / lower_len,
-        'u_ratio': upper_len / total_len,
-        'd_ratio': digits_len / total_len,
-        'non_alnum_ratio': (total_len - alnum_len) / total_len,
-        'compressibility': total_len / compressed_len,
-        'longest_word': max(len(w) for w in diff_set) if diff_set else 0,
-        'longest_seq': find_longest_seq(diff_word),
-        'diff_word': diff_word,
-
-        # negative diff data
-        'neg_ul_ratio': neg_upper_len / neg_lower_len,
-        'neg_u_ratio': neg_upper_len / neg_total_len,
-        'neg_d_ratio': neg_digits_len / neg_total_len,
-        'neg_non_alnum_ratio': (neg_total_len - neg_alnum_len) / neg_total_len,
-        'neg_compressibility': neg_total_len / neg_compressed_len,
-        'neg_longest_word': max(len(w) for w in neg_diff_set) if neg_diff_set else 0,
-        'neg_longest_seq': find_longest_seq(neg_diff_word),
-        'neg_diff_word': neg_diff_word,
+        'difflen': len(newrevision) - len(oldrevision),
+        'commentlen': len(editcomment),
+        'empty_comment': len(editcomment) == 0,
+        'blanking': len(newrevision) == 0,
+        'sz_ratio': (len(newrevision) + 1) / (len(oldrevision) + 1),
     }
+
+
+def extend_with_ratio_metrics(**record):
+    ret = {}
+
+    for key in ['diff', 'neg_diff', 'editcomment']:
+        value = record[key]
+
+        total_len = len(value)
+        upper_len = sum(c in uppercase for c in value)
+        lower_len = sum(c in uppercase for c in value)
+        digits_len = sum(c in digits for c in value)
+        alnum_len = sum(c in alphanum for c in value)
+
+        if value == 0:
+            compressed_len = 0
+        else:
+            compressed_len = len(list(lzw.compress(value.encode('utf8'))))
+
+        ret.update({
+            key + '_ul_ratio': None if lower_len == 0 else upper_len / lower_len,
+            key + '_u_ratio': None if total_len == 0 else upper_len / total_len,
+            key + '_d_ratio': None if total_len == 0 else digits_len / total_len,
+            key + '_non_alnum_ratio': None if total_len == 0 else (total_len - alnum_len) / total_len,
+            key + '_compressibility': None if compressed_len == 0 else total_len / compressed_len,
+        })
+
+    return ret
+
 
 
 uppercase = set(string.uppercase)
@@ -343,3 +392,36 @@ def to_timestamp(obj, *keys):
     for key in keys:
         obj[key] = int(time.mktime(time.strptime(obj[key], '%Y-%m-%dT%H:%M:%SZ')))
     return obj
+
+
+#--- Utils
+
+def keep_urls_preprocess(text):
+    preprocessor_map = {}
+    rev_preprocessor_map = {}
+    def _preprocessor(match):
+        url = match.group(0)
+        if url in rev_preprocessor_map:
+            repl = rev_preprocessor_map[url]
+        else:
+            repl = magic + ''.join(random.sample(string.ascii_lowercase, 1)[0] for _ in xrange(16))
+            preprocessor_map[repl] = url
+            rev_preprocessor_map[url] = repl
+        return repl
+    return re_http_url.sub(_preprocessor, text), preprocessor_map
+
+
+def keep_urls_postprocess(chunks, preprocessor_map):
+    #ret = []
+    #for chunk in chunks:
+    #    if chunk in preprocessor_map:
+    #        chunk = preprocessor_map[chunk]
+    #    ret.append(chunk)
+
+    # Slow but rubust algorithm
+    ret = []
+    for chunk in ret:
+        for key, value in preprocessor_map.iteritems():
+            chunk = chunk.replace(key, value)
+        ret.append(chunk)
+    return ret
