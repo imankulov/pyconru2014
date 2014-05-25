@@ -187,6 +187,7 @@ def export_collection(filename, collection=corpus, include=None, exclude=None, c
 def apply_all():
     apply(cleanup, extend_with_diff, extend_with_basic_text_metrics, extend_with_ratio_metrics)
 
+
 def apply(*functions):
     """
     A function which applies the sequence of functions `func` to every item of
@@ -199,23 +200,32 @@ def apply(*functions):
 
         for func in functions:
             ret = func(**record)
+            overwrite = False
+
+            if isinstance(ret, tuple):
+                ret, overwrite = ret
+
             if ret:
-                record = dict(record, **ret)
+                if overwrite:
+                    record = ret
+                else:
+                    record = dict(record, **ret)
 
         if record != orig_record:
             corpus.update({'_id': record['_id']}, record)
 
 
 def cleanup(**record):
-    for key in ['difflen' 'commentlen' 'empty_comment' 'sz_ratio' 'ul_ratio'
-            'u_ratio' 'd_ratio' 'non_alnum_ratio' 'compressibility'
-            'longest_word' 'longest_seq' 'diff_word' 'neg_ul_ratio'
-            'neg_u_ratio' 'neg_d_ratio' 'neg_non_alnum_ratio'
-            'neg_compressibility' 'neg_longest_word' 'neg_longest_seq'
+    for key in ['difflen', 'commentlen', 'empty_comment', 'sz_ratio', 'ul_ratio',
+            'u_ratio', 'd_ratio', 'non_alnum_ratio', 'compressibility',
+            'longest_word', 'longest_seq', 'diff_word', 'neg_ul_ratio',
+            'neg_u_ratio', 'neg_d_ratio', 'neg_non_alnum_ratio',
+            'neg_compressibility', 'neg_longest_word', 'neg_longest_seq',
             'neg_diff_word']:
         record.pop(key, None)
     if record['editcomment'] == 'null':
-        return {'editcomment': ''}
+        record['editcomment'] = ''
+    return record, True
 
 
 def extend_with_diff(oldrevision, newrevision, **record):
@@ -411,7 +421,6 @@ def to_timestamp(obj, *keys):
         obj[key] = int(time.mktime(time.strptime(obj[key], '%Y-%m-%dT%H:%M:%SZ')))
     return obj
 
-
 #--- Utils
 
 def keep_urls_preprocess(text):
@@ -438,8 +447,10 @@ def keep_urls_postprocess(chunks, preprocessor_map):
 
     # Slow but rubust algorithm
     ret = []
-    for chunk in ret:
+    for chunk in chunks:
         for key, value in preprocessor_map.iteritems():
             chunk = chunk.replace(key, value)
+        if magic in chunk:
+            raise RuntimeError('Postprocess function failed')
         ret.append(chunk)
     return ret
