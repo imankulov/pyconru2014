@@ -139,29 +139,47 @@ def get_revision_filenames(topdir):
 #--- Dumper
 
 
-def export_corpus(filename, exclude=None):
+def export_collection(filename, collection=corpus, include=None, exclude=None, converters=None, default_values=None):
     """
     Export corpus to a csv file
 
     :param exclude: list of fields to exclude. By default we exclude
                     "oldrevision" and "newrevision" records
     """
-    if exclude is None:
-        exclude = ['oldrevision', 'newrevision', 'diff_word', 'neg_diff_word']
+    converters = converters or {}
+    default_values = default_values or {}
+    all_fields = set(collection.find_one().keys())
 
-    exclude = set(exclude)
-    exclude.add('_id')
+    if include is not None:
+        # handle include parameter
+        returned_fields = include
+        fields_dict = {f: False for f in all_fields if f not in include}
 
-    all_fields = set(corpus.find_one().keys())
-    returned_fields = sorted(all_fields - exclude)
-    fields_dict = {f: False for f in exclude}
+    else:
+        # handle exclude parameter
+        if exclude is None:
+            exclude = ['oldrevision', 'newrevision', 'diff_word', 'neg_diff_word']
+        exclude = set(exclude)
+        exclude.add('_id')
+
+        returned_fields = sorted(all_fields - exclude)
+        fields_dict = {f: False for f in exclude}
 
     with open(filename, mode='w') as fd:
         writer = DictWriter(fd, returned_fields)
         writer.writeheader()
-        for record in tqdm(corpus.find(fields=fields_dict), total=corpus.count()):
-            record = {k: v.encode('utf8') if isinstance(v, unicode) else v for k, v in record.iteritems()}
-            writer.writerow(record)
+        for record in tqdm(collection.find(fields=fields_dict), total=collection.count()):
+            out = {}
+            for k in returned_fields:
+                v = record.get(k, default_values.get(k))
+                if k in converters:
+                    v = converters[k](v)
+                if isinstance(v, unicode):
+                    v = v.encode('utf8')
+                if isinstance(v, bool):
+                    v = int(v)
+                out[k] = v
+            writer.writerow(out)
 
 
 #--- Dataset extension functions
