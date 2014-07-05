@@ -1,0 +1,661 @@
+film,studio,rotten_tomatoes,genre,worldwide_gross,budget,profitability,year
+300,warner bros,60.00,Action,456.07,65.00,7.02,2007
+3:10 to Yuma,lionsgate,88.00,Western,69.78,48.00,1.45,2007
+30 Days of Night,independent,50.00,Horror,75.10,32.00,2.35,2007
+Across the Universe,independent,54.00,Romance,29.37,45.00,0.65,2007
+Alien vs. Predator -- Requiem,fox,14.00,Horror,128.88,40.00,3.22,2007
+Alvin and the Chipmunks,fox,26.00,Animation,360.47,70.00,5.15,2007
+American Gangster,universal,79.00,Thriller,267.90,100.00,2.68,2007
+Bee Movie,paramount,52.00,Animation,287.12,150.00,1.91,2007
+Beowulf,paramount,71.00,Action,196.26,150.00,1.31,2007
+Blades of Glory,paramount,69.00,Comedy,145.71,61.00,2.39,2007
+Charlie Wilson's War,universal,82.00,Biography,118.48,75.00,1.58,2007
+Daddy Day Camp,sony,1.00,Comedy,18.20,6.00,3.03,2007
+Disturbia,paramount,67.00,Thriller,117.76,20.00,5.89,2007
+Dragon Wars (aka D-War),mediaplex,27.00,Action,74.25,75.00,0.99,2007
+Enchanted,disney,93.00,Comedy,340.49,85.00,4.01,2007
+Epic Movie,independent,2.00,Comedy,86.87,20.00,4.34,2007
+Evan Almighty,universal,23.00,Comedy,173.39,175.00,0.99,2007
+Fantastic Four: Rise of the Silver Surfer,fox,35.00,Action,289.05,130.00,2.22,2007
+Ghost Rider,sony,28.00,Action,228.74,110.00,2.08,2007
+Good Luck Chuck,lionsgate,3.00,Comedy,59.19,25.00,2.37,2007
+Grindhouse,the weinstein company,82.00,Action,50.19,53.00,0.95,2007
+Hairspray,warner bros,92.00,Musical,202.55,75.00,2.70,2007
+Halloween,the weinstein company,26.00,Horror,78.47,20.00,3.92,2007
+Happily N'Ever After,lionsgate,4.00,Animation,38.08,47.00,0.81,2007
+Harry Potter and the Order of the Phoenix,warner bros,78.00,Adventure,939.88,150.00,6.27,2007
+Hitman,fox,15.00,Action,99.96,17.50,5.71,2007
+Hostel: Part II,lionsgate,44.00,Horror,35.62,10.00,3.56,2007
+I Am Legend,warner bros,69.00,Thriller,584.16,150.00,3.89,2007
+I Now Pronounce You Chuck and Larry,universal,13.00,Comedy,186.05,85.00,2.19,2007
+In the Land of Women,warner bros,43.00,Comedy,17.56,10.00,1.76,2007
+Into the Wild,paramount,82.00,Drama,55.63,15.00,3.71,2007
+Juno,fox,94.00,Comedy,231.18,7.50,30.82,2007
+Knocked Up,universal,91.00,Comedy,219.00,33.00,6.64,2007
+License to Wed,warner bros,8.00,Comedy,69.31,35.00,1.98,2007
+Lions for Lambs,independent,27.00,Drama,63.21,35.00,1.81,2007
+Live Free or Die Hard,fox,79.00,Action,383.53,110.00,3.49,2007
+Meet the Robinsons,disney,66.00,Animation,169.33,100.00,1.69,2007
+Michael Clayton,independent,90.00,Thriller,92.99,25.00,3.72,2007
+Mr. Brooks,mgm,56.00,Thriller,48.12,20.00,2.41,2007
+Mr. Magorium's Wonder Emporium,independent,36.00,Fantasy,68.95,25.00,2.76,2007
+Music and Lyrics,warner bros,63.00,Romance,145.90,40.00,3.65,2007
+Nancy Drew,independent,49.00,Thriller,30.67,20.00,1.53,2007
+National Treasure: Book of Secrets,disney,31.00,Thriller,457.36,130.00,3.52,2007
+Next,paramount,29.00,Thriller,73.54,70.00,1.05,2007
+No Country for Old Men,paramount,95.00,Drama,161.00,25.00,6.44,2007
+No Reservations,nan,39.00,Comedy,92.60,28.00,3.31,2007
+Norbit,paramount,9.00,Comedy,159.31,60.00,2.66,2007
+Ocean's 13,warner bros,70.00,Thriller,311.31,85.00,3.66,2007
+P.S. I Love You,independent,21.00,Romance,153.09,30.00,5.10,2007
+Pathfinder: Legend of the Ghost Warrior,nan,11.00,Action,30.82,26.00,1.19,2007
+Pirates of the Caribbean: At World's End,disney,45.00,Action,961.00,300.00,3.20,2007
+Premonition,sony,8.00,Drama,84.00,20.00,4.20,2007
+Ratatouille,disney,97.00,Animation,621.42,150.00,4.14,2007
+Rush Hour 3,warner bros,20.00,Action,258.02,140.00,1.84,2007
+Saw IV,independent,18.00,Horror,139.35,10.00,13.94,2007
+Shoot 'Em Up,warner bros,67.00,Action,26.81,39.00,0.69,2007
+Shooter,paramount,47.00,Action,95.70,61.00,1.57,2007
+Shrek the Third,paramount,42.00,Animation,798.96,160.00,4.99,2007
+Sicko,the weinstein company,93.00,Documentary,35.77,9.00,3.97,2007
+Smokin' Aces,universal,27.00,Action,57.10,17.00,3.36,2007
+Spider-Man 3,sony,61.00,Action,890.87,258.00,3.45,2007
+Stardust,paramount,76.00,Adventure,135.56,70.00,1.94,2007
+Stomp the Yard,independent,27.00,Musical,75.51,14.00,5.39,2007
+Superbad,sony,88.00,Comedy,169.87,20.00,8.49,2007
+Surf's Up,sony,78.00,Animation,149.04,85.00,1.75,2007
+Sweeney Todd: The Demon Barber of Fleet Street,warner bros,86.00,Musical,152.52,50.00,3.05,2007
+The Bourne Ultimatum,universal,93.00,Thriller,442.82,110.00,4.03,2007
+The Brave One,nan,43.00,Action,69.79,70.00,1.00,2007
+The Bucket List,warner bros,41.00,Drama,174.31,45.00,3.87,2007
+The Darjeeling Limited,fox,67.00,Drama,34.92,17.50,2.00,2007
+The Game Plan,disney,27.00,Comedy,147.87,22.00,6.72,2007
+The Golden Compass,warner bros,42.00,Action,372.23,180.00,2.07,2007
+The Heartbreak Kid,paramount,30.00,Comedy,127.77,60.00,2.13,2007
+The Hills Have Eyes 2,independent,11.00,Horror,37.47,15.00,2.50,2007
+The Invasion,warner bros,19.00,Sci-Fi,40.17,80.00,0.50,2007
+The Kingdom,nan,52.00,Action,86.61,80.00,1.08,2007
+The Kite Runner,paramount,66.00,Drama,73.19,20.00,3.66,2007
+The Mist,the weinstein company,72.00,Horror,56.83,18.00,3.16,2007
+The Nanny Diaries,the weinstein company,33.00,Comedy,47.00,20.00,2.35,2007
+The Reaping,nan,9.00,Horror,62.77,40.00,1.57,2007
+The Simpsons Movie,fox,90.00,Comedy,527.07,75.00,7.03,2007
+There Will Be Blood,paramount,91.00,Drama,76.18,25.00,3.05,2007
+TMNT,nan,33.00,Action,95.01,35.00,2.71,2007
+Transformers,paramount,57.00,Action,708.27,150.00,4.72,2007
+Tyler Perry's Why Did I get Married,independent,46.00,Romance,55.86,15.00,3.72,2007
+Vacancy,sony,55.00,Comedy,35.30,19.00,1.86,2007
+Waitress,independent,89.00,Romance,22.18,2.00,11.09,2007
+Walk Hard: The Dewey Cox Story,sony,75.00,Comedy,20.58,35.00,0.59,2007
+We Own the Night,sony,55.00,Drama,54.83,21.00,2.61,2007
+Wild Hogs,disney,14.00,Comedy,253.63,90.00,2.82,2007
+Zodiac,paramount,89.00,Thriller,84.79,65.00,1.30,2007
+"10,000 B.C.",warner bros,9.00,Adventure,269.78,105.00,2.57,2008
+21,sony,35.00,Crime,157.85,35.00,4.51,2008
+27 Dresses,fox,40.00,Comedy,160.31,30.00,5.34,2008
+88 Minutes,sony,5.00,Drama,32.58,30.00,1.09,2008
+Appaloosa,warner bros,77.00,Action,27.59,20.00,1.38,2008
+Australia,fox,55.00,Adventure,208.49,78.00,2.67,2008
+Baby Mama,independent,63.00,Comedy,64.02,70.00,0.91,2008
+Babylon A.D.,fox,7.00,Action,70.21,45.00,1.56,2008
+Bangkok Dangerous,lionsgate,9.00,Action,46.60,45.00,1.04,2008
+"Be Kind, Rewind",new line,65.00,Comedy,30.58,20.00,1.53,2008
+Bedtime Stories,disney,25.00,Comedy,218.35,80.00,2.73,2008
+Beverly Hills Chihuahua,disney,41.00,Adventure,145.20,20.00,7.26,2008
+Body of Lies,warner bros,53.00,Action,114.89,67.50,1.70,2008
+Bolt,disney,89.00,Animation,305.83,150.00,2.04,2008
+Burn After Reading,relativity media,78.00,Comedy,163.72,37.00,4.42,2008
+Cadillac Records,sony,67.00,Biography,8.88,12.00,0.74,2008
+Changeling,independent,62.00,Drama,113.01,55.00,2.05,2008
+City of Ember,independent,52.00,Adventure,17.89,38.00,0.47,2008
+Cloverfield,paramount,77.00,Action,170.77,25.00,6.83,2008
+College Road Trip,buena vista,13.00,Adventure,51.54,140.00,0.37,2008
+Death Race,universal,42.00,Action,75.46,45.00,1.68,2008
+"Definitely, Maybe",universal,71.00,Comedy,55.21,7.00,7.89,2008
+Disaster Movie,lionsgate,2.00,Comedy,34.81,20.00,1.74,2008
+Doomsday,relativity media,48.00,Action,22.21,33.00,0.67,2008
+Doubt,independent,78.00,Drama,36.19,25.00,1.45,2008
+Dr. Seuss' Horton Hears a Who!,fox,79.00,Animation,297.13,85.00,3.50,2008
+Drillbit Taylor,paramount,26.00,Comedy,49.68,40.00,1.24,2008
+Eagle Eye,paramount,27.00,Action,177.80,80.00,2.22,2008
+Expelled: No Intelligence Allowed,nan,10.00,Documentary,7.72,3.50,2.21,2008
+Fireproof,independent,40.00,Drama,33.47,0.50,66.93,2008
+First Sunday,sony,13.00,Comedy,38.80,13.00,2.98,2008
+Fly Me to the Moon,independent,18.00,Animation,40.32,25.00,1.61,2008
+Fool's Gold,warner bros,11.00,Adventure,109.36,72.50,1.51,2008
+Forgetting Sarah Marshall,independent,85.00,Comedy,104.93,30.00,3.50,2008
+Four Christmases,warner bros,26.00,Comedy,161.83,80.00,2.02,2008
+Get Smart,warner bros,51.00,Action,230.69,80.00,2.88,2008
+Ghost Town,paramount,85.00,Comedy,26.96,20.00,1.35,2008
+Gran Torino,warner bros,80.00,Drama,269.96,33.00,8.18,2008
+Hancock,sony,40.00,Action,624.39,150.00,4.16,2008
+Harold and Kumar Escape from Guantanamo Bay,warner bros,54.00,Adventure,43.49,12.00,3.62,2008
+Hellboy II: The Golden Army,universal,87.00,Action,160.19,82.50,1.94,2008
+High School Musical 3: Senior Year,disney,65.00,Comedy,252.04,11.00,22.91,2008
+Igor,independent,36.00,Animation,30.66,30.00,1.02,2008
+In Bruges,focus,81.00,Crime,33.39,15.00,2.23,2008
+Indiana Jones and the Kingdom of the Crystal Skull,paramount,77.00,Action,786.56,185.00,4.25,2008
+Iron Man,paramount,94.00,Action,585.07,186.00,3.15,2008
+Journey to the Center of the Earth,warner bros,61.00,Action,241.99,45.00,5.38,2008
+Jumper,fox,16.00,Action,222.23,82.50,2.69,2008
+Kit Kittredge: An American Girl,warner bros,78.00,Drama,17.66,10.00,1.77,2008
+Kung Fu Panda,paramount,88.00,Animation,631.74,200.00,3.16,2008
+Lakeview Terrace,sony,46.00,Crime,44.65,20.00,2.23,2008
+Leatherheads,universal,52.00,Comedy,41.16,58.00,0.71,2008
+Mad Money,independent,22.00,Comedy,26.41,22.00,1.20,2008
+Madagascar: Escape 2 Africa,paramount,64.00,Animation,600.82,150.00,4.01,2008
+Made of Honor,sony,13.00,Comedy,105.96,40.00,2.65,2008
+Mamma Mia!,universal,53.00,Comedy,609.47,66.00,9.23,2008
+Marley and Me,fox,63.00,Comedy,206.07,55.00,3.75,2008
+Max Payne,fox,16.00,Action,85.38,35.00,2.44,2008
+Meet Dave,fox,19.00,Adventure,50.65,60.00,0.84,2008
+Meet the Spartans,independent,2.00,Comedy,84.65,30.00,2.82,2008
+Milk,universal,94.00,Biography,50.16,20.00,2.51,2008
+Miracle at St. Anna,disney,34.00,Action,9.12,45.00,0.20,2008
+Mirrors,independent,14.00,Horror,77.49,35.00,2.21,2008
+Miss Pettigrew Lives for a Day,independent,78.00,Comedy,15.17,60.00,0.25,2008
+My Best Friend's Girl,lionsgate,14.00,Comedy,41.62,20.00,2.08,2008
+Never Back Down,summit,23.00,Action,41.63,21.00,1.98,2008
+Nick and Norah's Infinite Playlist,sony,73.00,Comedy,33.53,10.00,3.35,2008
+Nights in Rodanthe,warner bros,31.00,Drama,79.24,30.00,2.64,2008
+Nim's Island,independent,51.00,Adventure,100.08,37.00,2.70,2008
+One Missed Call,warner bros,0.00,Horror,44.51,20.00,2.23,2008
+Over Her Dead Body,new line,15.00,Comedy,20.71,10.00,2.07,2008
+Penelope,summit,52.00,Comedy,20.74,15.00,1.38,2008
+Pineapple Express,sony,68.00,Action,101.62,26.00,3.91,2008
+Pride & Glory,warner bros,34.00,Crime,31.15,30.00,1.04,2008
+Prom Night,independent,8.00,Horror,57.19,18.00,3.18,2008
+Punisher: War Zone,lionsgate,27.00,Action,10.09,35.00,0.29,2008
+Quantum of Solace,mgm,64.00,Action,584.52,230.00,2.54,2008
+Quarantine,sony,59.00,Horror,41.31,12.00,3.44,2008
+Rachel Getting Married,independent,85.00,Drama,16.61,12.00,1.38,2008
+Rambo,lionsgate,36.00,Action,113.24,47.50,2.38,2008
+Religulous,lionsgate,70.00,Documentary,13.14,2.50,5.25,2008
+Righteous Kill,overture,19.00,Crime,78.45,60.00,1.31,2008
+Role Models,universal,77.00,Comedy,91.77,28.00,3.28,2008
+Saw V,independent,13.00,Crime,113.86,10.80,10.54,2008
+Semi-Pro,warner bros,21.00,Comedy,43.88,2.60,16.88,2008
+Seven Pounds,sony,27.00,Drama,158.25,55.00,2.88,2008
+Sex and the City,warner bros,49.00,Comedy,415.25,57.50,7.22,2008
+Sex Drive,summit,46.00,Adventure,18.75,19.00,0.99,2008
+Shutter,fox,7.00,Horror,47.88,8.00,5.98,2008
+Slumdog Millionaire,independent,94.00,Crime,375.79,15.00,25.05,2008
+Smart People,independent,50.00,Comedy,11.65,7.00,1.66,2008
+Space Chimps,independent,36.00,Animation,64.83,37.00,1.75,2008
+Speed Racer,warner bros,38.00,Action,93.95,120.00,0.78,2008
+Star Wars: The Clone Wars,independent,19.00,Animation,68.28,8.50,8.03,2008
+Step Brothers,sony,54.00,Comedy,128.11,65.00,1.97,2008
+Step Up 2: The Streets,disney,26.00,Drama,150.82,17.50,8.62,2008
+Stop-Loss,paramount,65.00,Drama,11.18,25.00,0.45,2008
+Street Kings,fox,37.00,Action,65.57,20.00,3.28,2008
+Superhero Movie,the weinstein company,15.00,Comedy,71.22,65.00,1.10,2008
+Swing Vote,disney,36.00,Comedy,17.63,20.00,0.88,2008
+The Bank Job,independent,78.00,Thriller,64.82,20.00,3.24,2008
+The Boy in the Striped Pyjamas,independent,63.00,Drama,40.07,12.50,3.21,2008
+The Chronicles of Narnia: Prince Caspian,disney,66.00,Action,419.67,200.00,2.10,2008
+The Curious Case of Benjamin Button,warner bros,73.00,Fantasy,285.43,160.00,1.78,2008
+The Dark Knight,warner bros,94.00,Thriller,999.49,185.00,5.40,2008
+The Day the Earth Stood Still ,fox,19.00,Thriller,228.03,100.00,2.28,2008
+The Duchess,paramount,60.00,Drama,43.31,13.50,3.21,2008
+The Express,independent,62.00,Biopic,9.80,37.50,0.26,2008
+The Eye,lionsgate,22.00,Horror,56.96,12.00,4.75,2008
+The Forbidden Kingdom,relativity media,64.00,Action,127.98,55.00,2.33,2008
+The Happening,fox,19.00,Thriller,163.40,48.00,3.40,2008
+The Haunting of Molly Hartley,independent,3.00,Horror,14.89,5.00,2.98,2008
+The House Bunny,sony,39.00,Comedy,70.44,25.00,2.82,2008
+The Incredible Hulk,universal,67.00,Action,263.15,137.50,1.91,2008
+The Longshots,independent,39.00,Comedy,11.74,30.00,0.39,2008
+The Love Guru,paramount,14.00,Comedy,40.83,62.00,0.66,2008
+The Mummy: Tomb of the Dragon Emperor,universal,14.00,Action,400.91,145.00,2.76,2008
+The Other Boleyn Girl,independent,41.00,Drama,77.71,40.00,1.94,2008
+The Pirates Who Don't Do Anything,universal,41.00,,12.90,15.00,0.86,2008
+The Ruins,paramount,46.00,Horror,22.73,25.00,0.91,2008
+The Secret Life of Bees,fox,56.00,Drama,39.61,11.00,3.60,2008
+The Sisterhood of the Traveling Pants 2,warner bros,65.00,,44.35,27.00,1.64,2008
+The Spiderwick Chronicles,paramount,79.00,Fantasy,162.84,92.50,1.76,2008
+The Spirit,lionsgate,14.00,Action,36.98,6.00,6.16,2008
+The Strangers,relativity media,44.00,Horror,82.39,9.00,9.15,2008
+The Tale of Despereaux,universal,54.00,Animation,88.71,55.00,1.61,2008
+The Visitor,independent,92.00,Drama,18.08,4.00,4.52,2008
+The Women,warner bros,13.00,Drama,50.01,16.00,3.13,2008
+The X-Files: I Want to Believe,fox,32.00,Thriller,68.37,35.00,1.95,2008
+Traitor,liberty starz,55.00,Thriller,27.66,22.00,1.26,2008
+Transporter 3,independent,36.00,Action,108.98,30.00,3.63,2008
+Tropic Thunder,paramount,83.00,Comedy,188.04,90.00,2.09,2008
+Twilight,summit,49.00,Romance,376.66,37.00,10.18,2008
+Tyler Perry's Meet the Browns,independent,31.00,Drama,41.98,20.00,2.10,2008
+Tyler Perry's The Family That Preys,independent,51.00,Drama,37.11,10.00,3.71,2008
+Under the Same Moon,weinstein co,72.00,,23.31,1.70,13.71,2008
+Untraceable,independent,14.00,Thriller,52.66,35.00,1.50,2008
+Valkyrie,mgm,58.00,Thriller,200.28,75.00,2.67,2008
+Vantage Point,sony,35.00,,151.16,40.00,3.78,2008
+Vicky Cristina Barcelona,the weinstein company,82.00,Romance,96.03,16.00,6.00,2008
+W.,lionsgate,60.00,Drama,29.50,25.10,1.18,2008
+WALL-E,disney,96.00,Animation,521.28,180.00,2.90,2008
+Wanted,universal,73.00,Action,341.25,75.00,4.55,2008
+"Welcome Home, Roscoe Jenkins",universal,24.00,Comedy,43.40,35.00,1.24,2008
+What Happens in Vegas,fox,28.00,Comedy,219.37,35.00,6.27,2008
+Yes Man,warner bros,43.00,Comedy,223.24,70.00,3.19,2008
+You Don't Mess with the Zohan,sony,36.00,Comedy,199.93,80.00,2.50,2008
+Zack and Miri Make a Porno,the weinstein company,64.00,Romance,41.94,24.00,1.75,2008
+9,focus,57.00,Animation,48.41,30.00,1.61,2009
+2012,sony,39.00,Action,768.00,200.00,3.84,2009
+(500) Days of Summer ,fox,87.00,Comedy,60.72,7.50,8.10,2009
+12 Rounds ,fox,30.00,Action,18.17,20.00,0.91,2009
+17 Again ,independent,55.00,Comedy,136.30,20.00,6.82,2009
+A Christmas Carol,disney,52.00,Animation,325.33,200.00,1.63,2009
+A Perfect Getaway ,universal,61.00,Mystery,22.83,14.00,1.63,2009
+A Serious Man ,universal,89.00,Drama,30.68,7.00,4.38,2009
+Adventureland ,miramax,89.00,Comedy,17.14,9.80,1.75,2009
+Aliens in the Attic ,fox,30.00,Adventure,57.88,45.00,1.29,2009
+All About Steve ,fox,6.00,Comedy,40.12,15.00,2.67,2009
+Alvin and the Chipmunks: The Squeakquel ,independent,21.00,Animation,440.70,75.00,5.88,2009
+Avatar ,fox,83.00,Action,2783.50,237.00,11.74,2009
+Amelia ,independent,21.00,Adventure,19.20,40.00,0.48,2009
+An Education,sony classics,94.00,Drama,26.09,7.50,3.48,2009
+Angels & Demons ,sony,36.00,Mystery,485.90,150.00,3.24,2009
+Armored ,sony,40.00,Action,16.00,20.00,0.80,2009
+Astro Boy ,summit,49.00,Animation,44.09,65.00,0.68,2009
+Away We Go ,focus,67.00,Comedy,14.89,21.00,0.71,2009
+Bandslam ,summit,79.00,Comedy,12.10,20.00,0.61,2009
+Bride Wars ,fox,11.00,Comedy,115.15,30.00,3.84,2009
+Brothers ,lionsgate,61.00,Drama,43.27,26.00,1.66,2009
+Bruno ,universal,68.00,Comedy,130.80,42.00,3.11,2009
+Cirque du Freak: The Vampire's Assistant ,universal,38.00,Action,34.36,40.00,0.86,2009
+Cloudy with a Chance of Meatballs ,sony,86.00,Animation,243.03,100.00,2.43,2009
+Confessions of a Shopaholic ,disney,24.00,Comedy,108.30,70.00,1.55,2009
+Coraline ,universal,89.00,Animation,124.58,60.00,2.08,2009
+Couples Retreat ,universal,12.00,Comedy,171.83,60.00,2.86,2009
+Crank: High Voltage ,lionsgate,62.00,Action,34.50,12.90,2.67,2009
+Dance Flick ,paramount,17.00,Action,31.43,25.00,1.26,2009
+Did You Hear About the Morgans? ,sony,12.00,Comedy,85.28,58.00,1.47,2009
+District 9 ,independent,91.00,Action,210.77,30.00,7.03,2009
+Drag Me to Hell ,universal,92.00,Horror,90.80,30.00,3.03,2009
+Dragonball Evolution ,fox,15.00,Action,58.23,30.00,1.94,2009
+Duplicity ,universal,64.00,Romance,78.14,60.00,1.30,2009
+Everybody's Fine ,miramax,46.00,Drama,16.40,21.00,0.78,2009
+Extract ,miramax,62.00,Comedy,10.83,7.50,1.44,2009
+Fame,mgm,25.00,Comedy,78.00,18.00,4.33,2009
+Fantastic Mr. Fox ,fox,93.00,Animation,46.46,40.00,1.16,2009
+Fast and Furious ,universal,28.00,Action,363.10,85.00,4.27,2009
+Fired Up! ,independent,22.00,Comedy,18.60,20.00,0.93,2009
+Friday the 13th,paramount,25.00,Horror,91.40,19.00,4.81,2009
+Funny People ,universal,68.00,Comedy,71.58,75.00,0.95,2009
+G-Force ,disney,22.00,Action,285.10,150.00,1.90,2009
+G.I. Joe: The Rise of Cobra ,paramount,33.00,Action,302.10,175.00,1.73,2009
+Gamer ,lionsgate,29.00,Action,40.82,12.50,3.27,2009
+Ghosts of Girlfriends Past ,warner bros,27.00,Comedy,102.22,50.00,2.04,2009
+Halloween II,independent,20.00,Horror,39.41,15.00,2.63,2009
+Hannah Montana: The Movie ,disney,44.00,Comedy,150.10,35.00,4.29,2009
+Harry Potter and the Half-Blood Prince ,warner bros,83.00,Adventure,934.00,250.00,3.74,2009
+He's Just Not That Into You ,warner bros,42.00,Comedy,178.84,25.00,7.15,2009
+Hotel for Dogs ,paramount,46.00,Comedy,118.20,35.00,3.38,2009
+I Love You Beth Cooper ,fox,14.00,Comedy,16.38,18.00,0.91,2009
+"I Love You, Man ",paramount,83.00,Comedy,91.40,40.00,2.29,2009
+Ice Age: Dawn of the Dinosaurs ,fox,45.00,Animation,886.68,90.00,9.85,2009
+Imagine That ,paramount,38.00,Comedy,22.99,55.00,0.42,2009
+Inglourious Basterds ,universal,88.00,Adventure,321.41,70.00,4.59,2009
+Inkheart ,warner bros,39.00,Adventure,62.44,60.00,1.04,2009
+Invictus,warner bros,75.00,Biography,122.23,60.00,2.04,2009
+It's Complicated ,universal,56.00,Comedy,224.60,85.00,2.64,2009
+Jennifer's Body ,fox,42.00,Comedy,31.55,16.00,1.97,2009
+Julie & Julia ,sony,74.00,Biography,126.64,40.00,3.17,2009
+Knowing ,summit,33.00,Drama,183.58,50.00,3.67,2009
+Land of the Lost ,universal,26.00,Drama,69.54,100.00,0.70,2009
+Law Abiding Citizen ,independent,25.00,Crime,126.48,53.00,2.39,2009
+Love Happens ,universal,18.00,Drama,36.08,18.00,2.00,2009
+Michael Jackson's This Is It ,sony,81.00,Documentary,252.10,60.00,4.20,2009
+Monsters Vs. Aliens ,paramount,72.00,Animation,381.50,175.00,2.18,2009
+My Bloody Valentine 3-D ,lionsgate,57.00,Crime,102.74,14.00,7.34,2009
+My Life in Ruins ,independent,9.00,Comedy,18.01,17.00,1.06,2009
+My Sister's Keeper ,warner bros,47.00,Drama,89.05,27.50,3.24,2009
+Next Day Air ,summit,21.00,Action,10.00,3.00,3.33,2009
+Night at the Museum: Battle of the Smithsonian ,fox,43.00,Action,413.00,150.00,2.75,2009
+Nine ,weinstein co,37.00,Drama,53.99,80.00,0.67,2009
+Ninja Assassin ,warner bros,25.00,Action,61.59,50.00,1.23,2009
+Not Easily Broken ,independent,34.00,Drama,10.70,5.00,2.14,2009
+Notorious,fox,50.00,Biography,44.36,20.00,2.22,2009
+Observe and Report ,warner bros,51.00,Comedy,26.96,18.00,1.50,2009
+Obsessed ,sony,20.00,Drama,73.82,20.00,3.69,2009
+Old Dogs ,buena vista,5.00,Comedy,96.75,35.00,2.76,2009
+Orphan ,warner bros,55.00,Horror,78.33,30.00,2.61,2009
+Pandorum ,independent,28.00,Action,17.00,40.00,0.42,2009
+Paul Blart: Mall Cop ,sony,33.00,Action,183.28,26.00,7.05,2009
+"Pirate Radio (The Boat that Rocked, UK)",focus,60.00,Comedy,36.34,50.00,0.73,2009
+Planet 51 ,independent,22.00,Animation,105.64,70.00,1.51,2009
+Post Grad ,fox,7.00,Comedy,6.38,15.00,0.43,2009
+Public Enemies ,universal,67.00,Biography,214.10,100.00,2.14,2009
+Push ,summit,22.00,Action,48.85,38.00,1.29,2009
+Race to Witch Mountain ,buena vista,42.00,Action,106.38,50.00,2.13,2009
+Saw VI ,independent,40.00,Horror,68.19,11.00,6.20,2009
+Sherlock Holmes ,warner bros,70.00,Action,524.02,90.00,5.82,2009
+Sorority Row ,summit,22.00,Horror,27.21,12.50,2.18,2009
+Star Trek ,paramount,94.00,Action,385.65,140.00,2.75,2009
+State of Play ,universal,84.00,Crime,88.30,60.00,1.47,2009
+Street Fighter: The Legend of Chun-Li ,fox,16.00,Action,12.34,50.00,0.25,2009
+Sunshine Cleaning ,independent,72.00,Comedy,16.57,5.00,3.31,2009
+Surrogates ,buena vista,39.00,Action,122.43,80.00,1.53,2009
+Taken ,fox,58.00,Action,226.80,25.00,9.07,2009
+Taking Woodstock ,focus,48.00,Comedy,10.00,29.00,0.34,2009
+Terminator Salvation ,warner bros,33.00,Action,372.00,200.00,1.86,2009
+The Blind Side ,warner bros,65.00,Biography,309.04,29.00,10.66,2009
+The Box ,warner bros,46.00,Drama,33.38,30.00,1.11,2009
+The Final Destination ,warner bros,29.00,Horror,185.80,40.00,4.64,2009
+The Fourth Kind ,universal,18.00,Mystery,47.70,10.00,4.77,2009
+The Hangover ,warner bros,79.00,Comedy,467.46,35.00,13.36,2009
+The Haunting in Connecticut ,lionsgate,17.00,Drama,77.52,30.00,2.58,2009
+The Hurt Locker ,independent,97.00,Drama,49.22,15.00,3.28,2009
+The Informant! ,warner bros,78.00,Comedy,41.76,22.00,1.90,2009
+The International ,sony,58.00,Action,60.10,50.00,1.20,2009
+The Invention of Lying ,warner bros,56.00,Comedy,32.40,18.50,1.75,2009
+The Lovely Bones ,paramount,32.00,Drama,94.78,65.00,1.46,2009
+The Men Who Stare at Goats ,independent,52.00,Comedy,68.94,25.00,2.76,2009
+The Pink Panther 2 ,sony,12.00,Adventure,75.94,59.00,1.29,2009
+The Princess and the Frog ,disney,84.00,Animation,267.04,105.00,2.54,2009
+The Proposal ,disney,43.00,Comedy,314.70,40.00,7.87,2009
+The Road ,the weinstein company,75.00,Adventure,27.41,25.00,1.10,2009
+The Soloist ,paramount,56.00,Drama,38.43,60.00,0.64,2009
+The Stepfather,sony,12.00,Mystery,31.20,20.00,1.56,2009
+The Taking of Pelham 1 2 3 ,sony,51.00,Action,150.16,100.00,1.50,2009
+The Time Traveler's Wife ,paramount,38.00,Drama,101.33,39.00,2.60,2009
+The Twilight Saga: New Moon ,summit,27.00,Drama,709.82,50.00,14.20,2009
+The Ugly Truth ,independent,14.00,Comedy,205.30,38.00,5.40,2009
+The Unborn,relativity media,11.00,Horror,76.51,16.00,4.78,2009
+Transformers: Revenge of the Fallen ,paramount,20.00,Action,836.30,210.00,3.98,2009
+Underworld: Rise of the Lycans ,sony,30.00,Action,91.35,35.00,2.61,2009
+Up ,disney,98.00,Animation,731.30,175.00,4.18,2009
+Up in the Air ,paramount,90.00,Drama,166.82,25.00,6.67,2009
+Watchmen ,warner bros,64.00,Action,185.30,130.00,1.43,2009
+Whatever Works ,independent,50.00,Comedy,35.10,15.00,2.34,2009
+Where the Wild Things Are ,warner bros,73.00,Adventure,99.12,100.00,0.99,2009
+Whip It ,independent,84.00,Drama,16.00,15.00,1.07,2009
+Whiteout ,warner bros,7.00,Action,12.20,35.00,0.35,2009
+X-Men Origins: Wolverine ,fox,37.00,Action,373.10,150.00,2.49,2009
+Year One ,sony,14.00,Adventure,62.35,60.00,1.04,2009
+Zombieland ,sony,90.00,Action,102.79,23.60,4.36,2009
+MacGruber,independent,47.00,Action,9.33,10.00,0.93,2010
+The Other Guys,sony,78.00,Action,170.27,100.00,1.70,2010
+All About Steve ,independent,6.00,Comedy,40.12,15.00,2.67,2010
+Death at a Funeral,independent,40.00,Comedy,49.05,21.00,2.34,2010
+Dinner for Schmucks,paramount,43.00,Comedy,86.41,69.00,1.25,2010
+Due Date,warner bros,40.00,Comedy,200.55,50.00,4.01,2010
+Furry Vengeance	,summit,8.00,Comedy,35.97,35.00,1.03,2010
+Get Him to the Greek,universal,73.00,Comedy,91.39,40.00,2.28,2010
+Grown Ups	,independent,10.00,Comedy,267.40,80.00,3.34,2010
+Little Fockers,independent,9.00,Comedy,232.70,100.00,2.33,2010
+Morning Glory,independent,54.00,Comedy,58.79,40.00,1.47,2010
+Nanny McPhee Returns,universal,77.00,Comedy,93.24,35.00,2.66,2010
+Please Give,sony,88.00,Comedy,4.26,3.00,1.42,2010
+The Kids Are All Right,independent,94.00,Comedy,29.36,4.00,7.34,2010
+The Switch,independent,52.00,Comedy,47.73,19.00,2.51,2010
+Tooth Fairy,fox,16.00,Comedy,112.36,48.00,2.34,2010
+Vampires Suck,independent,4.00,Comedy,79.98,20.00,4.00,2010
+Why Did I Get Married Too?,lionsgate,27.00,Comedy,60.67,20.00,3.03,2010
+You Again,independent,18.00,Comedy,31.86,20.00,1.59,2010
+Jackass 3-D,paramount,63.00,Documentary,169.95,20.00,8.50,2010
+Daybreakers	,lionsgate,67.00,Action,51.41,20.00,2.57,2010
+For Colored Girls,independent,33.00,Drama,55.01,21.00,2.62,2010
+The Greatest,independent,52.00,Drama,0.41,6.00,0.07,2010
+The Last Song,disney,19.00,Drama,89.04,20.00,4.45,2010
+Charlie St. Cloud	,universal,27.00,Fantasy,46.09,44.00,1.05,2010
+127 Hours,independent,93.00,Adventure,60.73,18.00,3.37,2010
+Saw 3-D,independent,10.00,Crime,122.51,20.00,6.13,2010
+Buried,independent,86.00,Drama,18.37,2.00,9.19,2010
+Tron: Legacy,independent,50.00,Action,291.41,170.00,1.71,2010
+Inception,warner bros,86.00,Action,823.58,160.00,5.15,2010
+Alice in Wonderland,disney,52.00,Adventure,1024.39,200.00,5.12,2010
+Hot Tub Time Machine,mgm,64.00,Adventure,64.42,36.00,1.79,2010
+Alpha and Omega,crest,17.00,Animation,29.92,20.00,1.50,2010
+Shrek Forever After,paramount,57.00,Animation,748.80,165.00,4.54,2010
+Gulliver's Travels,fox,21.00,Comedy,236.00,112.00,2.11,2010
+Eat Pray Love	,sony,36.00,Drama,204.48,60.00,3.41,2010
+Killers,lionsgate,11.00,Action,93.40,75.00,1.25,2010
+Tangled,disney,89.00,Animation,355.08,260.00,1.37,2010
+Going the Distance,warner bros,53.00,Comedy,42.05,32.00,1.31,2010
+I Love You Phillip Morris,independent,71.00,Comedy,20.10,15.00,1.34,2010
+Just Wright,fox,45.00,Comedy,21.57,12.00,1.80,2010
+Leap Year,universal,21.00,Comedy,32.59,19.00,1.72,2010
+Letters to Juliet,summit,40.00,Comedy,79.18,30.00,2.64,2010
+Life as We Know It,independent,28.00,Comedy,96.16,38.00,2.53,2010
+Love & Other Drugs,fox,48.00,Comedy,54.53,30.00,1.82,2010
+Sex and the City 2,warner bros,15.00,Comedy,288.35,100.00,2.88,2010
+She's Out of My League,paramount,57.00,Comedy,48.81,20.00,2.44,2010
+The Back-up Plan,cbs,20.00,Comedy,77.09,35.00,2.20,2010
+Valentine's Day,warner bros,17.00,Comedy,217.57,52.00,4.18,2010
+You Will Meet a Tall Dark Stranger,independent,43.00,Comedy,26.66,22.00,1.21,2010
+Youth in Revolt,the weinstein company,68.00,Comedy,19.62,18.00,1.09,2010
+Dear John,sony,29.00,Drama,114.97,25.00,4.60,2010
+Remember Me,summit,28.00,Drama,55.86,16.00,3.49,2010
+Despicable Me,universal,81.00,Animation,541.88,69.00,7.85,2010
+The King's Speech,independent,95.00,Biography,427.36,15.00,28.49,2010
+The Runaways,independent,68.00,Biography,4.68,10.00,0.47,2010
+Easy A,sony,85.00,Comedy,73.64,8.00,9.21,2010
+Legion,independent,19.00,Action,67.91,26.00,2.61,2010
+Predators,fox,64.00,Action,126.74,40.00,3.17,2010
+Resident Evil: Afterlife,highlight communications,24.00,Action,296.22,60.00,4.94,2010
+Skyline,independent,16.00,Action,55.26,10.00,5.53,2010
+Piranha 3-D,the weinstein company,74.00,Comedy,79.78,24.00,3.32,2010
+The Last Exorcism,independent,73.00,Drama,66.45,1.80,36.92,2010
+The Twilight Saga: Eclipse	,summit,50.00,Drama,693.58,68.00,10.20,2010
+The Wolfman,universal,33.00,Drama,139.79,150.00,0.93,2010
+A Nightmare on Elm Street,warner bros,13.00,Horror,115.67,35.00,3.30,2010
+Case 39,independent,23.00,Horror,28.19,26.00,1.08,2010
+Devil,independent,52.00,Horror,56.83,10.00,5.68,2010
+My Soul to Take,relativity media,9.00,Horror,19.83,25.00,0.79,2010
+Paranormal Activity 2,paramount,,Horror,177.50,3.00,59.17,2010
+The Crazies,liberty starz,72.00,Horror,54.59,20.00,2.73,2010
+Cats & Dogs: The Revenge of Kitty Galore,independent,13.00,Action,112.49,85.00,1.32,2010
+From Paris with Love,independent,38.00,Action,52.80,52.00,1.02,2010
+Knight and Day,fox,53.00,Action,261.68,117.00,2.24,2010
+The A-Team,fox,47.00,Action,177.03,100.00,1.77,2010
+The Expendables,independent,40.00,Action,274.47,82.00,3.35,2010
+The Sorcerer's Apprentice,disney,42.00,Action,215.28,150.00,1.44,2010
+Date Night,fox,66.00,Comedy,152.26,55.00,2.77,2010
+Clash of the Titans,warner bros,28.00,Action,493.21,125.00,3.95,2010
+Green Zone,universal,53.00,Action,94.87,100.00,0.95,2010
+The Book of Eli        ,independent,48.00,Action,153.46,80.00,1.92,2010
+The Last Airbender,paramount,6.00,Action,319.12,150.00,2.13,2010
+Harry Potter and the Deathly Hallows Part 1,warner bros,79.00,Adventure,955.00,125.00,7.64,2010
+The Chronicles of Narnia: The Voyage of the Dawn Treader,fox,49.00,Adventure,415.00,155.00,2.68,2010
+Winter's Bone,independent,94.00,Drama,7.79,2.00,3.90,2010
+The Social Network,sony,96.00,Biography,199.60,50.00,3.99,2010
+Burlesque,paramount,36.00,Drama,56.08,55.00,1.02,2010
+Country Strong,sony,20.00,Drama,20.52,15.00,1.37,2010
+Repo Men,universal,22.00,Action,18.41,32.00,0.58,2010
+Unstoppable,fox,86.00,Action,169.50,95.00,1.78,2010
+Toy Story 3,disney,99.00,Animation,1063.16,200.00,5.32,2010
+Conviction,independent,68.00,Biography,9.71,12.50,0.78,2010
+The Next Three Days,lionsgate,51.00,Crime,41.75,30.00,1.39,2010
+Faster	,cbs,41.00,Action,24.91,24.00,1.04,2010
+Jonah Hex,warner bros,13.00,Action,10.91,47.00,0.23,2010
+Machete,independent,73.00,Action,42.14,20.00,2.11,2010
+Salt,sony,62.00,Action,293.50,110.00,2.67,2010
+The Losers,warner bros,47.00,Action,29.38,25.00,1.18,2010
+True Grit,paramount,96.00,Adventure,252.03,38.00,6.63,2010
+Edge of Darkness,warner bros,55.00,Crime,81.12,80.00,1.01,2010
+Iron Man 2,paramount,74.00,Action,622.05,200.00,3.11,2010
+Kick-Ass,independent,76.00,Action,96.13,30.00,3.20,2010
+Percy Jackson & the Olympians: The Lightning Thief,fox,50.00,Action,226.50,95.00,2.38,2010
+Prince of Persia: The Sands of Time,disney,36.00,Action,335.15,200.00,1.68,2010
+Red,summit,71.00,Action,164.42,58.00,2.83,2010
+Robin Hood,universal,42.00,Action,321.67,200.00,1.61,2010
+Takers,sony,27.00,Action,68.16,32.00,2.13,2010
+The Bounty Hunter,sony,7.00,Action,136.32,40.00,3.41,2010
+Legend of the Guardians: The Owls of Ga'Hoole,warner bros,51.00,Animation,139.90,80.00,1.75,2010
+Cyrus,independent,80.00,Comedy,9.92,7.00,1.42,2010
+Marmaduke,fox,9.00,Comedy,83.35,50.00,1.67,2010
+The American,universal,66.00,Crime,46.00,20.00,2.30,2010
+The Town,warner bros,94.00,Crime,144.55,37.00,3.91,2010
+Stone,independent,49.00,Drama,8.40,22.00,0.38,2010
+Wall Street: Money Never Sleeps,independent,54.00,Drama,130.63,70.00,1.87,2010
+Hachiko: A Dog's Story,independent,58.00,Drama,40.26,16.00,2.52,2010
+Brooklyn's Finest,independent,42.00,Action,36.35,17.00,2.14,2010
+The Joneses,independent,61.00,Comedy,1.97,10.00,0.20,2010
+Cop Out,warner bros,19.00,Action,55.52,30.00,1.85,2010
+The Killer Inside Me,independent,56.00,Crime,3.58,13.00,0.28,2010
+All Good Things,independent,33.00,Drama,0.64,20.00,0.03,2010
+Shutter Island,paramount,68.00,Drama,294.80,80.00,3.69,2010
+The Ghost Writer,summit,83.00,Mystery,60.02,45.00,1.33,2010
+Never Let Me Go,independent,70.00,Drama,9.73,15.00,0.65,2010
+Megamind,paramount,72.00,Animation,318.13,130.00,2.45,2010
+City Island,independent,81.00,Comedy,7.86,6.00,1.31,2010
+Mother and Child,independent,79.00,Drama,4.87,7.00,0.70,2010
+Step Up 3D,summit,46.00,Drama,159.15,30.00,5.30,2010
+Scott Pilgrim vs. the World,universal,81.00,Action,47.57,60.00,0.79,2010
+The Karate Kid,sony,66.00,Action,359.12,40.00,8.98,2010
+How to Train Your Dragon,paramount,98.00,Animation,494.88,165.00,3.00,2010
+Diary of a Wimpy Kid,independent,53.00,Comedy,75.70,15.00,5.05,2010
+Extraordinary Measures	,cbs,27.00,Drama,15.14,31.00,0.49,2010
+The Fighter,paramount,91.00,Drama,128.00,25.00,5.12,2010
+Solitary Man,independent,81.00,Comedy,5.06,15.00,0.34,2010
+Black Swan        ,fox,88.00,Drama,329.39,13.00,25.34,2010
+Yogi Bear,nan,14.00,Comedy,202.27,80.00,2.53,2010
+The Tourist,sony,20.00,Thriller,277.00,100.00,2.77,2010
+Harry Potter and the Deathly Hallows Part 2,warner bros,96.00,Fantasy,1328.11,125.00,10.62,2011
+Transformers: Dark of the Moon,dreamworks pictures,35.00,Action,1123.20,195.00,5.76,2011
+Twilight: Breaking Dawn,independent,26.00,Romance,702.17,110.00,6.38,2011
+The Hangover Part II,legendary pictures,35.00,Comedy,581.46,80.00,7.27,2011
+"Pirates of the Caribbean:
+On Stranger Tides",disney,34.00,Action,1043.87,250.00,4.18,2011
+Fast Five,universal,78.00,Action,626.13,125.00,5.01,2011
+Mission Impossible 4,paramount,93.00,Action,689.79,145.00,4.76,2011
+Cars 2,pixar,38.00,Animation,551.85,200.00,2.76,2011
+Sherlock Holmes 2,warner bros,60.00,Action,521.96,125.00,4.18,2011
+Thor,disney,77.00,Action,448.51,150.00,2.99,2011
+Rise of the Planet of the Apes,20th century fox,83.00,Action,481.23,93.00,5.17,2011
+Captain America: The First Avenger,disney,78.00,Action,368.40,140.00,2.63,2011
+The Help,dreamworks pictures,75.00,Drama,206.24,25.00,8.25,2011
+Bridesmaids,relativity media,90.00,Comedy,288.38,32.50,8.87,2011
+Kung Fu Panda 2,dreamworks animation,82.00,Animation,663.02,150.00,4.42,2011
+Puss In Boots,dreamworks,83.00,Animation,522.26,130.00,4.02,2011
+X-Men: First Class,disney,87.00,Action,353.62,160.00,2.21,2011
+Rio,20th century fox,71.00,Animation,484.63,90.00,5.38,2011
+The Smurfs,sony pictures animation,23.00,Animation,562.16,110.00,5.11,2011
+Average,nan,52.00,,87.00,42.00,2.05,2011
+Super 8 ,paramount,82.00,Horror,259.71,50.00,5.19,2011
+Rango,paramount,88.00,Animation,245.15,135.00,1.82,2011
+Horrible Bosses,warner bros,69.00,Comedy,209.64,35.00,5.99,2011
+Green Lantern,warner bros,27.00,Action,219.85,200.00,1.10,2011
+Hop,relativity media,26.00,Animation,183.95,63.00,2.92,2011
+Paranormal Activity 3,independent,68.00,Horror,201.90,5.00,40.38,2011
+Just Go With It,happy madison,19.00,Romance,214.95,80.00,2.69,2011
+The Girl With The Dragon Tattoo,sony,87.00,Thriller,229.19,90.00,2.55,2011
+Bad Teacher,independent,44.00,Comedy,216.20,20.00,10.81,2011
+Cowboys and Aliens,universal,44.00,Action,174.82,163.00,1.07,2011
+Gnomeo and Juliet,disney,56.00,Animation,193.97,36.00,5.39,2011
+The Green Hornet,columbia,44.00,Action,227.80,120.00,1.90,2011
+The Muppets,disney,97.00,Comedy,158.34,45.00,3.52,2011
+"Crazy, Stupid, Love",warner bros,78.00,Romance,142.84,50.00,2.86,2011
+Real Steel,dreamworks pictures,58.00,Action,269.81,110.00,2.45,2011
+Battle: Los Angeles,relativity media,35.00,Action,211.82,70.00,3.03,2011
+The Descendants,20th century fox,89.00,Drama,167.65,20.00,8.38,2011
+Immortals,relativity media,36.00,Action,182.49,75.00,2.43,2011
+Zookeeper,happy madison productions,14.00,Comedy,170.30,80.00,2.13,2011
+Limitless,virgin,69.00,Thriller,161.85,27.00,5.99,2011
+War Horse,disney,77.00,Drama,167.54,66.00,2.54,2011
+Tower Heist,relativity,68.00,Comedy,164.54,75.00,2.19,2011
+The Adventures of Tintin,paramount,74.00,Adventure,373.64,130.00,2.87,2011
+Contagion,warner bros,84.00,Thriller,135.46,60.00,2.26,2011
+Moneyball,columbia,95.00,Drama,108.10,50.00,2.16,2011
+We Bought a Zoo,fox,63.00,Comedy,101.18,50.00,2.02,2011
+Jack and Jill,happy madison,4.00,Comedy,124.93,79.00,1.58,2011
+Dolphin Tale,independent,84.00,Drama,87.95,37.00,2.38,2011
+No Strings Attached,spyglass entertainment,49.00,Comedy,147.70,25.00,5.91,2011
+Mr. Popper's Penguins,20th century fox,47.00,Comedy,187.36,55.00,3.41,2011
+Unknown,independent,55.00,Thriller,130.79,30.00,4.36,2011
+The Adjustment Bureau,independent,72.00,Thriller,127.87,50.20,2.55,2011
+Hugo,paramount,93.00,Adventure,96.68,150.00,0.64,2011
+Water For Elephants,20th century fox,60.00,Drama,117.09,38.00,3.08,2011
+The Lincoln Lawyer,lionsgate,84.00,Drama,75.01,40.00,1.88,2011
+Happy Feet 2,village roadshow pictures,41.00,Animation,106.51,135.00,0.79,2011
+Midnight in Paris,sony,93.00,Romance,148.66,17.00,8.74,2011
+Friends With Benefits,warner bros,71.00,Romance,149.54,35.00,4.27,2011
+I Am Number Four,paramount,32.00,Thriller,144.50,60.00,2.41,2011
+Source Code,summit entertainment,92.00,Thriller,123.28,32.00,3.85,2011
+New Year's Eve,warner bros,8.00,Romance,142.04,56.00,2.54,2011
+Insidious,sony,67.00,Horror,97.01,1.50,64.67,2011
+Diary of a Wimpy Kid 2: Rodrick Rules,20th century fox,47.00,Comedy,72.42,21.00,3.45,2011
+Footloose,spyglass entertainment,71.00,Drama,62.05,24.00,2.59,2011
+The Dilemma,spyglass entertainment,23.00,Comedy,69.70,70.00,1.00,2011
+Arthur Christmas,aardman animations,92.00,Animation,147.41,150.00,0.98,2011
+Hall Pass,warner bros,35.00,Comedy,83.16,36.00,2.31,2011
+Soul Surfer,sony,46.00,Drama,44.27,18.00,2.46,2011
+Final Destination 5,new line cinema,61.00,Horror,157.89,40.00,3.95,2011
+The Ides of March,columbia,85.00,Thriller,54.19,12.50,4.34,2011
+The Artist,weinstein company,97.00,Drama,105.74,16.00,6.61,2011
+Hanna,universal,71.00,Action,63.78,30.00,2.13,2011
+Something Borrowed,independent,,Romance,60.18,35.00,1.72,2011
+Spy Kids: All The Time in the World,weinstein company,22.00,Action,74.08,27.00,2.74,2011
+Scream 4,weinstein company,58.00,Horror,97.14,40.00,2.43,2011
+Red Riding Hood,warner bros,11.00,Horror,89.16,42.00,2.12,2011
+Paul,relativity,72.00,Comedy,97.98,40.00,2.45,2011
+J.Edgar,warner bros,42.00,Drama,73.19,35.00,2.09,2011
+The Roommate,independent,4.00,Horror,40.49,16.00,2.53,2011
+The Change Up,relativity media,24.00,Comedy,70.83,52.00,1.36,2011
+30 Minutes or Less,independent,43.00,Comedy,40.55,28.00,1.45,2011
+Colombiana,sony,28.00,Action,60.97,40.00,1.52,2011
+In Time,regency enterprises,38.00,Thriller,127.39,40.00,3.18,2011
+Sucker Punch,legendary pictures,23.00,Action,89.79,82.00,1.09,2011
+Larry Crowne,universal,34.00,Drama,52.41,30.00,1.75,2011
+50/50,independent,93.00,Comedy,36.51,8.00,4.56,2011
+Drive,independent,93.00,Thriller,67.01,15.00,4.47,2011
+A Very Harold and Kumar Christmas,lionsgate,72.00,Comedy,34.04,19.00,1.79,2011
+Arthur,warner bros,26.00,Comedy,45.74,40.00,1.14,2011
+The Rite,warner bros,20.00,Horror,96.00,37.00,2.59,2011
+Extremely Loud and Incredibly Close,warner bros,47.00,Drama,45.99,40.00,1.15,2011
+The Debt,universal,76.00,Thriller,45.43,20.00,2.27,2011
+The Sitter,fox,22.00,Comedy,34.58,25.00,1.38,2011
+The Mechanic,independent,53.00,Action,51.20,40.00,1.28,2011
+Priest,sony,17.00,Action,78.31,60.00,1.31,2011
+Abduction,vertigo entertainment,4.00,Action,82.07,35.00,2.34,2011
+The Iron Lady,weinstein company,53.00,Drama,81.41,13.00,6.26,2011
+Beastly,cbs films,19.00,Romance,28.83,17.00,1.70,2011
+Winnie The Pooh,disney,91.00,Animation,33.15,30.00,1.11,2011
+Killer Elite,independent,25.00,Action,52.96,70.00,0.76,2011
+Our Idiot Brother,the weinstein company,68.00,Comedy,24.82,5.00,4.96,2011
+Season Of The Witch,relativity,10.00,Action,91.60,40.00,2.29,2011
+Don't Be Afraid Of The Dark,miramax films,59.00,Horror,31.55,25.00,1.26,2011
+Tinker Tailor Soldier Spy,focus,83.00,Thriller,77.75,21.00,3.70,2011
+Sanctum,relativity media,30.00,Action,108.60,30.00,3.62,2011
+Monte Carlo,20th century fox,38.00,Romance,39.66,20.00,1.98,2011
+Your Highness,universal,26.00,Comedy,24.86,49.90,0.50,2011
+Mars Needs Moms,disney,36.00,Animation,38.99,150.00,0.26,2011
+Dream House,morgan creek productions,7.00,Horror,38.50,50.00,0.77,2011
+Conan the Barbarian,lionsgate,22.00,Action,48.80,90.00,0.54,2011
+The Three Musketeers,independent,24.00,Action,132.15,75.00,1.76,2011
+The Eagle,universal,39.00,Action,27.12,25.00,1.08,2011
+Shark Night 3D,relativity,16.00,Horror,38.70,25.00,1.55,2011
+Fright Night,dreamworks,75.00,Horror,37.10,30.00,1.24,2011
+Apollo 18,weinstein company,23.00,Horror,25.56,5.00,5.11,2011
+The Thing,universal,36.00,Horror,27.43,38.00,0.72,2011
+What's Your Number,20th century fox,24.00,Comedy,30.43,20.00,1.52,2011
+One Day,independent,37.00,Romance,55.24,15.00,3.68,2011
+Warrior,lionsgate,83.00,Action,23.06,25.00,0.92,2011
+The Tree Of Life,independent,84.00,Drama,54.30,32.00,1.70,2011
+The Rum Diary,independent,50.00,Drama,21.55,45.00,0.48,2011
+The Conspirator,independent,56.00,Drama,14.21,25.00,0.57,2011
+Drive Angry,independent,45.00,Action,28.93,45.00,0.64,2011
+Johnny English Reborn,relativity media,38.00,Comedy,157.94,45.00,3.51,2011
+The Big Year,independent,38.00,Comedy,7.41,41.00,0.18,2011
+Take Me Home Tonight,relativity,28.00,Comedy,6.93,25.00,0.28,2011
+Cedar Rapids,20th century fox,86.00,Comedy,6.86,10.00,0.69,2011
+Beginners,independent,84.00,Comedy,14.31,3.20,4.47,2011
+My Week with Marilyn,the weinstein company,83.00,Drama,8.26,10.00,0.83,2011
+Margin Call,independent,86.00,Thriller,8.87,3.50,2.53,2011
+Anonymous,relativity media,46.00,Drama,14.19,30.00,0.47,2011
+The Company Men,weinstein company,66.00,Drama,4.80,15.00,0.32,2011
+Shame,independent,80.00,Drama,13.96,6.50,2.15,2011
+Albert Nobbs,independent,53.00,Drama,2.75,8.00,0.34,2011
+Everything Must Go,reliance entertainment,74.00,Drama,2.71,5.00,0.54,2011
+Take Shelter,independent,92.00,Drama,1.57,5.00,0.31,2011
+Another Earth,independent,63.00,Fantasy,1.77,0.20,8.86,2011
+Dylan Dog: Dead of Night,independent,6.00,Horror,4.63,20.00,0.23,2011
+Red State,independent,57.00,Horror,1.10,4.00,0.28,2011
+The Beaver,summit entertainment,62.00,Drama,6.37,21.00,0.30,2011
+Machine Gun Preacher,lionsgate,29.00,Action,1.10,30.00,0.04,2011
+A Dangerous Method,independent,79.00,Drama,8.97,20.00,0.45,2011
+Hesher,independent,54.00,Drama,0.38,7.00,0.05,2011
+The Son Of No One,independent,18.00,Thriller,0.03,15.00,0.00,2011
+Waiting For Forever,independent,6.00,Romance,0.03,5.00,0.01,2011
+Trespass,independent,11.00,Thriller,3.12,35.00,0.09,2011
+Vanishing on 7th Street,independent,52.00,Horror,1.07,10.00,0.11,2011
